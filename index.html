@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body style="margin: 0; padding: 0; overflow: hidden;">
+    <div style="display: flex; width: 100vw; height: 100vh;">
+      <!-- 左側：p5.js 畫布容器 (藤蔓時間軸) -->
+      <div id="canvas-column" style="width: 400px; height: 100vh; background: #1e281e;"></div>
+      
+      <!-- 右側：內容顯示區 (iframe) -->
+      <div id="content-column" style="flex-grow: 1; height: 100%; background: #ffffff;">
+        <iframe id="display-iframe" name="display-frame" src="about:blank" 
+                style="width: 100%; height: 100%; border: none; outline: none;"></iframe>
+      </div>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
